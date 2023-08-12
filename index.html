@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interactive quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- -->
+    <!-- header section -->
+    <div class="header">
+      <div class="headerContainer">
+        <button class="hi">Hello !</button>
+
+        <input class="info" type="text" placeholder="Name " />
+        <input class="info" type="date" />
+      </div>
+    </div>
+    <!-- END OF HEADER SECTION -->
+    <!-- ///////////////////////////////////////// -->
+    <!-- START OF MAIN QUIZ QUESTIONS/ Mutiple Choice -->
+    <p class="welcome">Welcome</p>
+    <form class="quiz-form1">
+      <h3 class="heading">🟢 Multiple Choice</h3>
+      <label for="question1">How many days are in a year?</label>
+
+      <select name="days" id="question1" class="options">
+        <option value="null">Select...</option>
+        <option value="2">2 Days</option>
+        <option value="365" class="year">365 Days</option>
+        <option value="355">355 Days</option>
+        <option value="465">465 Days</option></select
+      ><br />
+      <label for="question2">How many bones are in the human body ?</label>
+      <select name="bones" id="question2" class="options">
+        <option value="null">Select...</option>
+        <option value="4">4 Bones</option>
+        <option value="230">230 Bones</option>
+        <option value="200">200 Bones</option>
+        <option value="206">206 Bones</option></select
+      ><br />
+      <label for="question3"
+        >which planet is <span class="close">Closest</span> to the sun ?</label
+      ><select name="planet" id="question3" class="options">
+        <option value="null">Select...</option>
+        <option value="earth">Earth</option>
+        <option value="uranus">Uranus</option>
+        <option value="mars">Mars</option>
+        <option value="saturn">Saturn</option>
+      </select>
+    </form>
+    <!-- END OF MULTIPLE CHOICE -->
+    <!-- START OF RIDDLES/INPUTS -->
+
+    <div class="RIDDELS">
+      <h2 class="heading">🟢 RIDDELS</h2>
+      <p class="riddelQ">
+        what is black and white and read all over?
+        <input class="RiddelAnswer" type="textarea" name="comment" />
+        <button class="riddelCheck">Check</button>
+      </p>
+      <p class="riddelQ">
+        What is always in front of you but cant be seen?
+        <input class="RiddelAnswer1" type="textarea" name="comment" />
+        <button class="riddelCheck1">Check</button>
+      </p>
+      <p class="riddelQ">
+        What gets wet while drying?
+        <input class="RiddelAnswer2" type="textarea" name="comment" />
+        <button class="riddelCheck2">Check</button>
+      </p>
+      <!-- END OF RIDDLEs SECTION -->
+      <!-- START OF "WOULD YOU RATHER" SECTION -->
+
+      <!-- <input class="RiddelAnswer" type="textarea" name="comment" /> -->
+    </div>
+    <!-- <h2 class="heading">🟢 WOULD YOU RATHER</h2> -->
+    <div class="you">
+      <h2 class="heading">🟢 WOULD YOU RATHER</h2>
+      <fieldset>
+        <legend>Would you rather lose your vision or your hearing?</legend>
+
+        <div>
+          <input type="radio" id="vision" name="scales" checked />
+          <label class="would" for="vision">Vision 👁️</label>
+        </div>
+
+        <div>
+          <input class="radio" type="radio" id="Hearing" name="Hearing" />
+          <label class="would" for="Hearing">Hearing 👂</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Would you rather eat a Pizza or a Hamburger?</legend>
+
+        <div>
+          <input
+            class="radio"
+            type="checkbox"
+            id="pizza"
+            name="scales"
+            checked
+          />
+          <label class="would" for="pizza">Pizza 🍕</label>
+        </div>
+
+        <div>
+          <input
+            class="radio"
+            type="checkbox"
+            id="hamburger"
+            name="hamburger"
+          />
+          <label class="would" for="hamburger">Hamburger 🍔 </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Would you rather go to un-explored parts of the Ocean or Space?
+        </legend>
+
+        <div>
+          <input
+            class="radio"
+            type="checkbox"
+            id="ocean"
+            name="ocean"
+            checked
+          />
+          <label class="would" for="ocean">Ocean 🌊</label>
+        </div>
+
+        <div>
+          <input class="radio" type="checkbox" id="space" name="space" />
+          <label class="would" for="space">Space 👽 </label>
+        </div>
+      </fieldset>
+    </div>
+
+    <script src="index.js
+    "></script>
+  </body>
+</html>
